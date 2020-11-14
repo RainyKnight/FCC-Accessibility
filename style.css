@@ -1,5 +1,6 @@
 :root {
     --ui: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -25,4 +26,6 @@ img {
 
 footer {
     background-color: var(--ui);
+    color: white;
+    padding: 20px;
 }
