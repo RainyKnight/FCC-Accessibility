@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Headings</title>
+    <title>Layout</title>
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -10,12 +10,14 @@
     <header>
         <nav>
             <a href="index.html" class="navbutton">Home</a>
-            <a href="headings.html" class="navbutton">Headings</a>
+            <a href="layout.html" class="navbutton">Layout</a>
         </nav>
-        <h1>Headings!</h1>
+        <h1>Accessible Layout</h1>
     </header>
     <main>
         <hr>
+        <hr>
+        <h2>Headings!</h2>
         <section>
             <p>Headings range from &lt;h1&gt;...&lt;h6&gt;</p>
             <hr>
@@ -29,15 +31,17 @@
                     </ul>
                 </ul>
 
+                <p>This is because most screenreaders tab through information by heading type.</p>
                 <p>To quote FreeCodeCamp:
                 <blockquote
                     cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/use-headings-to-show-hierarchical-relationships-of-content"
                     style="background-color: rgb(227, 227, 227); padding: 10px;">"Headings with equal (or higher) rank
                     start new implied sections, headings with lower rank start subsections of the previous one."
                 </blockquote>
-                <article style="text-align: left;">
-                    <h4>Here's an example of good layout:</h4>
-                    <ul>
+                <hr>
+                <article>
+                    <h4>Here's an example of hierarchical layout:</h4>
+                    <ul style="text-align: left;">
                         <li>&lt;h1&gt; Cool Facts About Penguins</li>
                         <ul>
                             <li>&lt;h2&gt; Favorite food </li>
@@ -48,7 +52,7 @@
                                 </ul>
                                 <li>&lt;h3&gt; Plants</li>
                                 <ul>
-                                    <li>Kelp</li>
+                                    <li>&lt;h4&gt; Kelp</li>
                                 </ul>
                             </ul>
                             <li>&lt;h2&gt; - Favorite activities</li>

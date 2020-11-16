@@ -38,6 +38,7 @@ main {
 
 ul {
     list-style-position: inside;
+    margin: auto;
 }
 
 img {
