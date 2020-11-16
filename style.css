@@ -10,22 +10,25 @@ body {
 nav {
     background-color: var(--ui);
     text-align: left;
+    padding: 20px;
 }
 
 .navbutton {
+    color: white;
     margin: 10px;
+    padding: 20px;
+    text-decoration: none;
 }
 
 .navbutton:hover {
     animation-name: btnGrow;
-    animation-duration: 0.1s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes btnGrow {
     100% {
-        transform: scale(1.2);
-        margin: 10px;
+        background-color: rgb(33, 33, 33);
     }
 }
 
