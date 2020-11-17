@@ -4,12 +4,17 @@
 }
 
 body {
+    margin-top: 5em;
     text-align: center;
 }
 
 nav {
+    position: fixed;
     background-color: var(--ui);
     text-align: left;
+    left: 0px;
+    top: 0px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -47,6 +52,12 @@ img {
     border-width: 5px;
     border-radius: 1%;
     margin: 5px;
+}
+
+#layout-example {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 10%;
 }
 
 footer {
