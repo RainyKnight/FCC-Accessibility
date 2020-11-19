@@ -27,13 +27,15 @@
             <hr>
             <article>
                 <h3>Accessibility rules for headings:</h3>
-                <ul style="text-align: left;">
-                    <li>There should be only <strong>one</strong> &lt;h1&gt; element on a page</li>
-                    <li>Headings can be used to organize information into hierarchies</li>
-                    <ul>
-                        <li>For example a &lt;h4&gt; should be a detail of a &lt;h3&gt;</li>
+                <div>
+                    <ul class="bullets">
+                        <li>There should be only <strong>one</strong> &lt;h1&gt; element on a page</li>
+                        <li>Headings can be used to organize information into hierarchies</li>
+                        <ul>
+                            <li>For example a &lt;h4&gt; should be a detail of a &lt;h3&gt;</li>
+                        </ul>
                     </ul>
-                </ul>
+                </div>
 
                 <p>This is because most screenreaders tab through information by heading type.</p>
                 <p>To quote FreeCodeCamp:
@@ -47,7 +49,7 @@
                     <header>
                         <h4>Here's an example of hierarchical layout:</h4>
                     </header>
-                    <ul id="layout-example">
+                    <ul class="bullets">
                         <li>&lt;h1&gt; Cool Facts About Penguins</li>
                         <ul>
                             <li>&lt;h2&gt; Favorite food </li>

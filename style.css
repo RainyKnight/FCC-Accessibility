@@ -60,10 +60,14 @@ img {
     margin: 5px;
 }
 
-#layout-example {
+ul {
     text-align: left;
-    margin-left: 30%;
-    margin-right: 10%;
+}
+
+.bullets {
+    /* background-color: red; */
+    margin: auto;
+    width: 21em;
 }
 
 footer {
