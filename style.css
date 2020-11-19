@@ -70,6 +70,11 @@ ul {
     width: 21em;
 }
 
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+}
+
 footer {
     background-color: var(--ui);
     color: white;
