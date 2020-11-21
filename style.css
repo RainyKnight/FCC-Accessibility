@@ -76,6 +76,10 @@ textarea {
     padding: 0.5em;
 }
 
+fieldset {
+    margin-bottom: 1.5em;
+}
+
 footer {
     background-color: var(--ui);
     color: white;
