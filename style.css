@@ -47,6 +47,9 @@ nav {
 h1 {
     margin-top: 2.5em;
 }
+.withSub {
+    margin-bottom: -1em;
+}
 
 ul {
     list-style-position: inside;
