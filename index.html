@@ -43,9 +43,11 @@
         <section id="figure">
             <h2>Figure</h2>
             <figure>
-                <image src="https://ntguardian.files.wordpress.com/2018/07/output_20_1.png" style="height: 17em" alt="stock ticker graph"></image>
+                <image src="https://ntguardian.files.wordpress.com/2018/07/output_20_1.png" style="height: 17em"
+                    alt="stock ticker graph"></image>
                 <figcaption>
-                    There is a general upward trend for all these bluechip tickers! (This summary is helpful for the visually impaired so they can follow along)
+                    There is a general upward trend for all these bluechip tickers! (This summary is helpful for the
+                    visually impaired so they can follow along)
                 </figcaption>
             </figure>
         </section>
@@ -64,15 +66,21 @@
             </fieldset>
         </section>
         <hr>
-        <section id="date picker">
+        <section id="dates">
             <h2 class="withSub">Dates!</h2>
             <p><sub>(not the fruit though)</sub></p>
-            <p>What would be the best date for you?</p>
-            <form>
-                <label for="userdate"></label>
-                <input type="date" id="userdate" name="userdate" required>
-                <input type="submit" name="submit" value="Submit">
-            </form>
+            <p>Dates require certain accessibility assets too.</p>
+            <p> For example, if my birthday was <time datetime="2020-11-21" style="color: red;">yesterday</time>, then it would be helpful
+                to add an actual date within the time element so people can tell when that actually was in the future.</p>
+            <article style="width: 80%; margin:auto">
+                <hr>
+                <p>What would be the best date for you?</p>
+                <form>
+                    <label for="userdate"></label>
+                    <input type="date" id="userdate" name="userdate" required>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </article>
         </section>
 
     </main>
