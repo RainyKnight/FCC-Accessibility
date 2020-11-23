@@ -90,3 +90,13 @@ footer {
     width: 100%;
     margin-top: 1em;
 }
+
+/* screenread only class for alternative information */
+.sr-only {
+    position: absolute;
+    left: -100000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
