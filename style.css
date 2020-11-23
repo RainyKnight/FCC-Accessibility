@@ -100,3 +100,13 @@ footer {
     top: auto;
     overflow: hidden;
 }
+
+#colorblind1 {
+    color: blue;
+    background-color: purple;
+}
+
+#colorblind2 {
+    color: green;
+    background-color: red;
+}
