@@ -123,3 +123,13 @@ footer {
     color: yellowgreen;
     background-color: hsl(330, 100%, 40%);
 }
+
+#colorblind3 {
+    color: lightsteelblue;
+    background-color: rgb(218, 218, 0);
+}
+
+#colorblind3-fixed {
+    color: rgb(23, 68, 128);
+    background-color: rgb(255, 255, 0);
+}
