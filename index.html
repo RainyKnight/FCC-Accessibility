@@ -79,7 +79,7 @@
                 to add an actual date within the time element so people can tell when that actually was in the future.
             </p>
             <!-- This style choice will help break up the content without being another full topic -->
-            <article style="width: 80%; margin:auto">
+            <article class="subsection">
                 <hr>
                 <p>What would be the best date for you?</p>
                 <form action="submit.html" target="_blank" style="margin-bottom: 1.3em">
@@ -94,27 +94,48 @@
             <h2>High Contrast Colors</h2>
             <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
                 on a color palette.</p>
-            <article>
-                <h3>Example 1</h3>
-                <p id="colorblind1" class="colorblind-examples">For example, blue text on a purple background may be
-                    completely invisible for people
-                    with colorblindess.</p>
-                <p id="colorblind1-fixed" class="colorblind-examples">Here's the same example except with a darker hue for the text and lighter hue for the background.
-                </p>
-            </article>
-            <br>
-            <article>
-                <h3>Example 2</h3>
-                <p id="colorblind2" class="colorblind-examples">This example is particularly bad for people with
-                    deuteranomaly, deuteranopia, or
-                    protanopia. </p>
-                <p id="colorblind2-fixed" class="colorblind-examples">To avoid the dreaded green/red contrast, changing red to a more magenta tone helps make it more accessible.</p>
-            </article>
-            <br>
-            <article>
-                <h3>Example 3</h3>
-                <p id="colorblind3" class="colorblind-examples">In this example, the blue text is too bright in contrast with the bright yellow. </p>
-                <p id="colorblind3-fixed" class="colorblind-examples">The contrast can be fixed by darkening the text and brightening the yellow background.</p>
+            <p>It's important to take the contrast ratio into consideration when deciding on a color.</p>
+            <p>According to FreeCodeCamp:</p>
+            <blockquote
+                cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text">
+                "The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal
+                text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from
+                1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. There
+                are many contrast checking tools available online that calculate this ratio for you."
+            </blockquote>
+            <article class="subsection" id="colorblind-examples">
+                <hr>
+                <p>Below are some commonly inaccessible color cobinations:</p>
+                <article>
+                    <h3>Example 1</h3>
+                    <p id="colorblind1" class="colorblind-examples">For example, blue text on a purple background may be
+                        completely invisible for people
+                        with colorblindess.</p>
+                    <p id="colorblind1-fixed" class="colorblind-examples">Here's the same example except with a darker
+                        hue
+                        for the text and lighter hue for the background.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 2</h3>
+                    <p id="colorblind2" class="colorblind-examples">This example is particularly bad for people with
+                        deuteranomaly, deuteranopia, or
+                        protanopia. </p>
+                    <p id="colorblind2-fixed" class="colorblind-examples">To avoid the dreaded green/red contrast,
+                        changing
+                        red to a more magenta tone helps make it more accessible.</p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 3</h3>
+                    <p id="colorblind3" class="colorblind-examples">In this example, the blue text is too bright in
+                        contrast
+                        with the bright yellow. </p>
+                    <p id="colorblind3-fixed" class="colorblind-examples">The contrast can be fixed by darkening the
+                        text
+                        and brightening the yellow background.</p>
+                </article>
             </article>
         </section>
 
