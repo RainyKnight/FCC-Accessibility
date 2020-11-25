@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="navbutton">Home</a>
+            <a href="layout.html" class="navbutton">Layout</a>
+            <a href="color.html" class="navbutton">Color</a>
+        </nav>
+        <h1>Color</h1>
+    </header>
+    <main>
+        <section id="high contrast colors">
+            <h2>High Contrast Colors</h2>
+            <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
+                on a color palette.</p>
+            <p>It's important to take the contrast ratio into consideration when deciding on a color.</p>
+            <p>According to FreeCodeCamp:</p>
+            <blockquote
+                cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text">
+                "The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal
+                text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from
+                1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. There
+                are many contrast checking tools available online that calculate this ratio for you."
+            </blockquote>
+            <article class="subsection" id="colorblind-examples">
+                <hr>
+                <p>Below are some commonly inaccessible color cobinations:</p>
+                <article>
+                    <h3>Example 1</h3>
+                    <p id="colorblind1" class="colorblind-examples">For example, blue text on a purple background may be
+                        completely invisible for people
+                        with colorblindess.</p>
+                    <p id="colorblind1-fixed" class="colorblind-examples">Here's the same example except with a darker
+                        hue
+                        for the text and lighter hue for the background.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 2</h3>
+                    <p id="colorblind2" class="colorblind-examples">This example is particularly bad for people with
+                        deuteranomaly, deuteranopia, or
+                        protanopia. </p>
+                    <p id="colorblind2-fixed" class="colorblind-examples">To avoid the dreaded green/red contrast,
+                        changing
+                        red to a more magenta tone helps make it more accessible.</p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 3</h3>
+                    <p id="colorblind3" class="colorblind-examples">In this example, the blue text is too bright in
+                        contrast
+                        with the bright yellow. </p>
+                    <p id="colorblind3-fixed" class="colorblind-examples">The contrast can be fixed by darkening the
+                        text
+                        and brightening the yellow background.</p>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <span>&#169;</span> 2020 Lucas Stoltman
+    </footer>
+</body>
+
+</html>
