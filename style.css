@@ -25,14 +25,14 @@ nav {
     z-index: 10;
 }
 
-.navbutton {
+.navButton {
     color: white;
     margin: 10px;
     padding: 20px;
     text-decoration: none;
 }
 
-.navbutton:hover {
+.navButton:hover {
     animation-name: btnGrow;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
@@ -159,4 +159,5 @@ footer {
     width: 80%;
     margin: auto;
     margin-bottom: 1.5em;
+
 }
