@@ -1,6 +1,7 @@
 :root {
     --ui: rgb(46, 46, 46);
     font-family: Arial, Helvetica, sans-serif;
+    --box-shadow: 0px 2px 3px black;
 }
 
 body {
@@ -69,7 +70,7 @@ blockquote {
     background-color: rgb(227, 227, 227);
     padding: 10px;
     margin: 2em;
-    box-shadow: 0px 3px 5px black;
+    box-shadow: var(--box-shadow);
 }
 
 ul {
@@ -107,7 +108,7 @@ footer {
 }
 
 .colorblind-examples {
-    box-shadow: 0px 3px 5px black;
+    box-shadow: var(--box-shadow);
     padding: 20px;
 }
 
@@ -142,14 +143,14 @@ footer {
 }
 
 #bad {
-    box-shadow: 0px 2px 5px;
+    box-shadow: var(--box-shadow);
     padding: 5px;
     background-color: rgba(255, 0, 0, 0.249);
     margin: 10px;
 }
 
 #good {
-    box-shadow: 0px 2px 5px;
+    box-shadow: var(--box-shadow);
     padding: 5px;
     background-color: rgba(0, 255, 0, 0.249);
     margin: 10px;
@@ -168,7 +169,7 @@ p:focus {
 }
 
 .tabindex-practice {
-    box-shadow: 0px 1px 5px;
+    box-shadow: var(--box-shadow);
     padding: 5px;
     margin: 10px;
 }
