@@ -145,6 +145,20 @@ footer {
     background-color: rgb(255, 255, 0);
 }
 
+#bad {
+    box-shadow: 0px 2px 5px;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.249);
+    margin: 10px;
+}
+
+#good {
+    box-shadow: 0px 2px 5px;
+    padding: 5px;
+    background-color: rgba(0, 255, 0, 0.249);
+    margin: 10px;
+}
+
 .subsection {
     width: 80%;
     margin: auto;
