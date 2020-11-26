@@ -166,3 +166,9 @@ footer {
 p:focus {
     background-color: yellow;
 }
+
+.tabindex-practice {
+    box-shadow: 0px 1px 5px;
+    padding: 5px;
+    margin: 10px;
+}
