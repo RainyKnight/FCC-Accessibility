@@ -159,5 +159,10 @@ footer {
     width: 80%;
     margin: auto;
     margin-bottom: 1.5em;
+}
 
+/* For tab indexing */
+
+p:focus {
+    background-color: yellow;
 }
