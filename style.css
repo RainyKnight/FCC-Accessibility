@@ -87,10 +87,6 @@ textarea {
     padding: 0.5em;
 }
 
-fieldset {
-    margin-bottom: 1.5em;
-}
-
 footer {
     background-color: var(--ui);
     color: white;
@@ -162,4 +158,5 @@ footer {
 .subsection {
     width: 80%;
     margin: auto;
+    margin-bottom: 1.5em;
 }
