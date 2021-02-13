@@ -71,7 +71,7 @@ ul {
 }
 
 img {
-    width: 80%;
+    max-width: 80%;
     height: auto;
     border-style: solid;
     border-width: 5px;
@@ -92,8 +92,11 @@ ul {
     text-align: left;
 }
 
+li {
+    list-style: none;
+}
+
 .bullets {
-    /* background-color: red; */
     margin: auto;
     width: 21em;
 }
@@ -208,6 +211,20 @@ p:focus {
         margin: unset;
     }
     audio {
+        max-width: 100%;
+    }
+    blockquote {
+        margin: unset;
+        margin-bottom: 1rem;
+    }
+    /* Adjusts list indention */
+    ul ul {
+        margin-left: -1rem;
+    }
+    li {
+        margin-left: -2rem;
+    }
+    .bullets {
         max-width: 100%;
     }
 }
