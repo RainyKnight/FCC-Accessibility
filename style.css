@@ -16,20 +16,21 @@ main {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     background-color: var(--ui);
     text-align: left;
     left: 0px;
     top: 0px;
     width: 100%;
-    padding: 20px;
     z-index: 10;
+    box-shadow: var(--box-shadow);
 }
 
 .navButton {
     color: white;
-    margin: 10px;
-    padding: 20px;
+    padding: 1rem;
     text-decoration: none;
 }
 
@@ -94,7 +95,7 @@ footer {
     background-color: var(--ui);
     color: white;
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     margin-top: 1em;
 }
 
@@ -158,6 +159,10 @@ footer {
     margin: 10px;
 }
 
+section {
+    overflow: hidden;
+}
+
 .subsection {
     width: 80%;
     margin: auto;
@@ -174,4 +179,21 @@ p:focus {
     box-shadow: var(--box-shadow);
     padding: 5px;
     margin: 10px;
+}
+
+@media (max-width:400px) {
+    nav {
+        justify-content: center;
+    }
+    img {
+        max-width: 100%;
+    }
+    .subsection {
+        width: 100%;
+        margin: unset;
+        margin-bottom: 1.5em;
+    }
+    audio {
+        max-width: 100%;
+    }
 }
