@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Accessibility</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="styles\style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         </section>
         <hr>
         <section id="alt text">
-            <h2>Pictures with alt text!</h2>
+            <h3>Pictures with alt text!</h3>
             <article>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Hazy_Crazy_Sunrise.jpg"
                     alt="Orange sunrise">
@@ -51,15 +51,15 @@
 
 
 
-        <h1> Layout</h1>
+        <h2> Layout</h2>
         <hr>
         <hr>
-        <h2>Headings!</h2>
+        <h3>Headings!</h3>
         <section id="headings" class="subsection">
             <p>Headings range from &lt;h1&gt;...&lt;h6&gt;</p>
             <hr>
             <article>
-                <h3>Accessibility rules for headings:</h3>
+                <h4>Accessibility rules for headings:</h4>
                 <div>
                     <ul class="bullets">
                         <li>There should be only <strong>one</strong> &lt;h1&gt; element on a page</li>
@@ -80,7 +80,7 @@
                 <hr>
                 <article>
                     <header>
-                        <h4>Here's an example of hierarchical layout:</h4>
+                        <h5>Here's an example of hierarchical layout:</h5>
                     </header>
                     <ul class="bullets">
                         <li>&lt;h1&gt; Cool Facts About Penguins</li>
@@ -113,7 +113,7 @@
         <section id="nav">
             <article>
                 <header>
-                    <h2>Nav</h2>
+                    <h3>Nav</h3>
                 </header>
                 <p>Each page should have a nav element at the top to allow the reader to easily navigate between pages.
                 </p>
@@ -123,7 +123,7 @@
         <section id="header">
             <article>
                 <header>
-                    <h2>Header</h2>
+                    <h3>Header</h3>
                 </header>
                 <p>The header element was derived from the &lt;head&gt; element, but now primarily surrounds heading
                     elements to help organize content.</p>
@@ -135,12 +135,12 @@
 
 
 
-        
-        <h1>Color</h1>
+
+        <h2>Color</h2>
         <hr>
         <hr>
         <section id="high contrast colors">
-            <h2>High Contrast Colors</h2>
+            <h3>High Contrast Colors</h3>
             <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
                 on a color palette.</p>
             <img src="https://miro.medium.com/max/2000/1*vEU5WV7Ho3FqQRcL2n5BEw.png" alt="Colorblind comparison chart">
@@ -163,7 +163,7 @@
                 <hr>
                 <p>Below are some commonly inaccessible color combinations:</p>
                 <article>
-                    <h3>Example 1</h3>
+                    <h4>Example 1</h4>
                     <p id="colorblind1" class="colorblind-examples">For example, blue text on a purple background may be
                         completely invisible for people
                         with color blindness.</p>
@@ -174,7 +174,7 @@
                 </article>
                 <br>
                 <article>
-                    <h3>Example 2</h3>
+                    <h4>Example 2</h4>
                     <p id="colorblind2" class="colorblind-examples">This example is particularly bad for people with
                         Deuteranomaly, deuteranopia, or
                         protanopia. </p>
@@ -184,7 +184,7 @@
                 </article>
                 <br>
                 <article>
-                    <h3>Example 3</h3>
+                    <h4>Example 3</h4>
                     <p id="colorblind3" class="colorblind-examples">In this example, the blue text is too bright in
                         contrast
                         with the bright yellow. </p>
@@ -200,7 +200,7 @@
 
 
         <section id="audio">
-            <h2>Audio for screen readers</h2>
+            <h3>Audio for screen readers</h3>
             <audio id="Screenreader example audio" controls>
                 <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
             </audio>
@@ -208,7 +208,7 @@
         </section>
         <hr>
         <section id="figure">
-            <h2>Figure</h2>
+            <h3>Figure</h3>
             <figure>
                 <image src="https://ntguardian.files.wordpress.com/2018/07/output_20_1.png" style="height: 17em"
                     alt="stock ticker graph"></image>
@@ -222,7 +222,7 @@
         </section>
         <hr>
         <section id="radioboxes">
-            <h2>Radio Buttons</h2>
+            <h3>Radio Buttons</h3>
             <fieldset class="subsection">
                 <legend>Look at all these choices!</legend>
                 <br>
@@ -238,28 +238,29 @@
         </section>
         <hr>
         <section id="dates">
-            <h2 class="withSub">Dates!</h2>
-            <p><sub>(not the fruit though)</sub></p>
-            <p>Dates require certain accessibility assets too.</p>
-            <p> For example, if my birthday was <time datetime="2020-11-21" style="color: red;"><i>yesterday</i></time>,
-                then
-                it would be helpful
-                to add an actual date within the time element so people can tell when "yesterday" actually was.
-            </p>
-            <!-- This style choice will help break up the content without being another full topic -->
-            <article class="subsection">
-                <hr>
-                <p>What would be the best date for you?</p>
-                <form action="submit.html" target="_blank" style="margin-bottom: 1.3em">
-                    <label for="userDate"></label>
-                    <input type="date" id="userDate" name="userDate" required>
-                    <input type="submit" name="submit" value="Submit">
-                </form>
-            </article>
+            <h2 class="withSub">Dates!</h3>
+                <p><sub>(not the fruit though)</sub></p>
+                <p>Dates require certain accessibility assets too.</p>
+                <p> For example, if my birthday was <time datetime="2020-11-21"
+                        style="color: red;"><i>yesterday</i></time>,
+                    then
+                    it would be helpful
+                    to add an actual date within the time element so people can tell when "yesterday" actually was.
+                </p>
+                <!-- This style choice will help break up the content without being another full topic -->
+                <article class="subsection">
+                    <hr>
+                    <p>What would be the best date for you?</p>
+                    <form action="submit.html" target="_blank" style="margin-bottom: 1.3em">
+                        <label for="userDate"></label>
+                        <input type="date" id="userDate" name="userDate" required>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </article>
         </section>
         <hr>
         <section id="links">
-            <h2>Links</h2>
+            <h3>Links</h3>
             <P tabindex="0">People often just set the words "click here" as the link to a page. Many screen readers will
                 only read
                 out what's between the anchor tags of a link, ignoring nearby context. As a result, it's helpful to put
@@ -280,7 +281,7 @@
         </section>
         <hr>
         <section id="tabbing">
-            <h2>Tabbing</h2>
+            <h3>Tabbing</h3>
             <p>Tabbing through a web page can be completely customized with the tabindex element.</p>
             <p>With the element, the creator can completely customize the order in which parts of a page are tabbed
                 through.</p>
@@ -304,19 +305,19 @@
 <!-- TODO LIST -->
 <!-- 
 
-* 
+* Fix contrast examples to have a large enough contrast ratio
 
-* 
+* Organize content better
 
-* 
+* Fix navigation links
 
-* 
+* Fix ul on mobile
 
-* 
+* widen images to 95% on mobile
 
-* 
+* widen blockquote
 
-* 
+* Fix radio button on mobile        
 
 * 
 
