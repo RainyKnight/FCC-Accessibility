@@ -13,9 +13,11 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="navButton" accesskey="h">Home</a>
-            <a href="layout.html" class="navButton" accesskey="l">Layout</a>
-            <a href="color.html" class="navButton" accesskey="c">Color</a>
+            <div class="nav-culler">
+                <a href="index.html" class="navButton" accesskey="h">Home</a>
+                <a href="layout.html" class="navButton" accesskey="l">Layout</a>
+                <a href="color.html" class="navButton" accesskey="c">Color</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -164,10 +166,12 @@
                 <p>Below are some commonly inaccessible color combinations:</p>
                 <article>
                     <h4>Example 1</h4>
-                    <p id="colorblind1" class="colorblind-examples" title="Contrast Ratio = 1.10">For example, blue text on a purple background may be
+                    <p id="colorblind1" class="colorblind-examples" title="Contrast Ratio = 1.10">For example, blue text
+                        on a purple background may be
                         completely invisible for people
                         with color blindness.</p>
-                    <p id="colorblind1-fixed" class="colorblind-examples" title="Contrast Ratio = 5.10">Here's the same example except with a darker
+                    <p id="colorblind1-fixed" class="colorblind-examples" title="Contrast Ratio = 5.10">Here's the same
+                        example except with a darker
                         hue
                         for the text and lighter hue for the background.
                     </p>
@@ -175,20 +179,24 @@
                 <br>
                 <article>
                     <h4>Example 2</h4>
-                    <p id="colorblind2" class="colorblind-examples" title="Contrast Ratio = 3.24">This example is particularly bad for people with
+                    <p id="colorblind2" class="colorblind-examples" title="Contrast Ratio = 3.24">This example is
+                        particularly bad for people with
                         Deuteranomaly, deuteranopia, or
                         protanopia. </p>
-                    <p id="colorblind2-fixed" class="colorblind-examples" title="Contrast Ratio = 7.34">To avoid the dreaded green/red contrast,
+                    <p id="colorblind2-fixed" class="colorblind-examples" title="Contrast Ratio = 7.34">To avoid the
+                        dreaded green/red contrast,
                         changing
                         red to magenta helps make it more accessible.</p>
                 </article>
                 <br>
                 <article>
                     <h4>Example 3</h4>
-                    <p id="colorblind3" class="colorblind-examples" title="Contrast Ratio = 1.19">In this example, the blue text is too bright in
+                    <p id="colorblind3" class="colorblind-examples" title="Contrast Ratio = 1.19">In this example, the
+                        blue text is too bright in
                         contrast
                         with the bright yellow. </p>
-                    <p id="colorblind3-fixed" class="colorblind-examples" title="Contrast Ratio = 8.99">The contrast can be fixed by darkening the
+                    <p id="colorblind3-fixed" class="colorblind-examples" title="Contrast Ratio = 8.99">The contrast can
+                        be fixed by darkening the
                         text
                         and brightening the yellow background.</p>
                 </article>
