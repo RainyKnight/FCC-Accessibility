@@ -14,13 +14,14 @@
     <header>
         <nav>
             <div class="nav-culler">
-                <a href="index.html" class="navButton" accesskey="h">Home</a>
-                <a href="layout.html" class="navButton" accesskey="l">Layout</a>
-                <a href="color.html" class="navButton" accesskey="c">Color</a>
+                <a href="#top" class="navButton" accesskey="h">Home</a>
+                <a href="#color" class="navButton" accesskey="c">Color</a>
+                <a href="#layout" class="navButton" accesskey="l">Layout</a>
             </div>
         </nav>
     </header>
     <main>
+        <a class="anchor" id="top"></a>
         <h1>Accessibility!</h1>
         <hr>
         <hr>
@@ -53,148 +54,9 @@
 
 
 
-        <h2> Layout</h2>
-        <hr>
-        <hr>
-        <h3>Headings!</h3>
-        <section id="headings" class="subsection">
-            <p>Headings range from &lt;h1&gt;...&lt;h6&gt;</p>
-            <hr>
-            <article>
-                <h4>Accessibility rules for headings:</h4>
-                <p>There should be only <strong>one</strong> &lt;h1&gt; element on a page.</p>
-                <p>Headings can be used to organize information into hierarchies</p>
-                <p>For example a &lt;h4&gt; should be a detail of a &lt;h3&gt;</p>
-                <p>This is because most screen readers tab through information by heading type.</p>
-                <p>To quote FreeCodeCamp:</p>
-                <blockquote
-                    cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/use-headings-to-show-hierarchical-relationships-of-content">
-                    "Headings with equal (or higher) rank
-                    start new implied sections, headings with lower rank start subsections of the previous one."
-                </blockquote>
-                <hr>
-                <article>
-                    <header>
-                        <h5>Here's an example of hierarchical layout:</h5>
-                    </header>
-                    <ul class="bullets">
-                        <li>&lt;h1&gt; Cool Facts About Penguins</li>
-                        <ul>
-                            <li>&lt;h2&gt; Favorite food </li>
-                            <ul>
-                                <li>&lt;h3&gt; Fish</li>
-                                <ul>
-                                    <li>&lt;h4&gt; Albacore tuna</li>
-                                </ul>
-                                <li>&lt;h3&gt; Plants</li>
-                                <ul>
-                                    <li>&lt;h4&gt; Kelp</li>
-                                </ul>
-                            </ul>
-                            <li>&lt;h2&gt; - Favorite activities</li>
-                            <ul>
-                                <li>&lt;h3&gt; Swimming</li>
-                                <li>&lt;h3&gt; Sleeping</li>
-                                <li>&lt;h3&gt; Staring at the sky longingly</li>
-                                <li>&lt;h3&gt; Huddling</li>
-                            </ul>
-                        </ul>
-                    </ul>
-                </article>
-                </p>
-            </article>
-        </section>
-        <hr>
-        <section id="nav">
-            <article>
-                <header>
-                    <h3>Nav</h3>
-                </header>
-                <p>Each page should have a nav element at the top to allow the reader to easily navigate between pages.
-                </p>
-            </article>
-        </section>
-        <hr>
-        <section id="header">
-            <article>
-                <header>
-                    <h3>Header</h3>
-                </header>
-                <p>The header element was derived from the &lt;head&gt; element, but now primarily surrounds heading
-                    elements to help organize content.</p>
-            </article>
-        </section>
 
 
 
-
-
-
-
-        <h2>Color</h2>
-        <hr>
-        <hr>
-        <section id="high contrast colors">
-            <h3>High Contrast Colors</h3>
-            <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
-                on a color palette.</p>
-            <img src="https://miro.medium.com/max/2000/1*vEU5WV7Ho3FqQRcL2n5BEw.png" alt="Colorblind comparison chart">
-            <p>It's important to take the contrast ratio into consideration when deciding on a color.</p>
-            <p>Some designers even recommend building the website in grayscale first <strong>then</strong> adding color
-                throughout the site to accommodate folks with monochromacy. This ensures that the luminescence of each
-                element is sufficiently different enough.</p>
-            <img src="https://www.colour-blindness.com/wp-content/uploads/total.png" alt="Monochromacy comparison">
-            <p>According to FreeCodeCamp:</p>
-            <blockquote
-                cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text">
-                "The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal
-                text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from
-                1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. There
-                are many contrast checking tools available online that calculate this ratio for you."
-            </blockquote>
-            <p>Check out this <a href="https://webaim.org/resources/contrastchecker/">contrast ratio checker</a> to
-                determine if your website meets the 4.5:1 standard.</p>
-            <article class="subsection" id="colorblind-examples">
-                <hr>
-                <p>Below are some commonly inaccessible color combinations:</p>
-                <article>
-                    <h4>Example 1</h4>
-                    <p id="colorblind1" class="colorblind-examples" title="Contrast Ratio = 1.10">For example, blue text
-                        on a purple background may be
-                        completely invisible for people
-                        with color blindness.</p>
-                    <p id="colorblind1-fixed" class="colorblind-examples" title="Contrast Ratio = 5.10">Here's the same
-                        example except with a darker
-                        hue
-                        for the text and lighter hue for the background.
-                    </p>
-                </article>
-                <br>
-                <article>
-                    <h4>Example 2</h4>
-                    <p id="colorblind2" class="colorblind-examples" title="Contrast Ratio = 3.24">This example is
-                        particularly bad for people with
-                        Deuteranomaly, deuteranopia, or
-                        protanopia. </p>
-                    <p id="colorblind2-fixed" class="colorblind-examples" title="Contrast Ratio = 7.34">To avoid the
-                        dreaded green/red contrast,
-                        changing
-                        red to magenta helps make it more accessible.</p>
-                </article>
-                <br>
-                <article>
-                    <h4>Example 3</h4>
-                    <p id="colorblind3" class="colorblind-examples" title="Contrast Ratio = 1.19">In this example, the
-                        blue text is too bright in
-                        contrast
-                        with the bright yellow. </p>
-                    <p id="colorblind3-fixed" class="colorblind-examples" title="Contrast Ratio = 8.99">The contrast can
-                        be fixed by darkening the
-                        text
-                        and brightening the yellow background.</p>
-                </article>
-            </article>
-        </section>
 
 
 
@@ -295,6 +157,161 @@
                 <p tabindex="1" class="tabindex-practice">This will be selected first.</p>
             </article>
         </section>
+
+
+
+
+
+
+
+
+
+        <a class="anchor" id="color"></a>
+        <h2>Color</h2>
+        <hr>
+        <hr>
+        <section id="high contrast colors">
+            <h3>High Contrast Colors</h3>
+            <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
+                on a color palette.</p>
+            <img src="https://miro.medium.com/max/2000/1*vEU5WV7Ho3FqQRcL2n5BEw.png" alt="Colorblind comparison chart">
+            <p>It's important to take the contrast ratio into consideration when deciding on a color.</p>
+            <p>Some designers even recommend building the website in grayscale first <strong>then</strong> adding color
+                throughout the site to accommodate folks with monochromacy. This ensures that the luminescence of each
+                element is sufficiently different enough.</p>
+            <img src="https://www.colour-blindness.com/wp-content/uploads/total.png" alt="Monochromacy comparison">
+            <p>According to FreeCodeCamp:</p>
+            <blockquote
+                cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text">
+                "The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal
+                text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from
+                1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. There
+                are many contrast checking tools available online that calculate this ratio for you."
+            </blockquote>
+            <p>Check out this <a href="https://webaim.org/resources/contrastchecker/">contrast ratio checker</a> to
+                determine if your website meets the 4.5:1 standard.</p>
+            <article class="subsection" id="colorblind-examples">
+                <hr>
+                <p>Below are some commonly inaccessible color combinations:</p>
+                <article>
+                    <h4>Example 1</h4>
+                    <p id="colorblind1" class="colorblind-examples" title="Contrast Ratio = 1.10">For example, blue text
+                        on a purple background may be
+                        completely invisible for people
+                        with color blindness.</p>
+                    <p id="colorblind1-fixed" class="colorblind-examples" title="Contrast Ratio = 5.10">Here's the same
+                        example except with a darker
+                        hue
+                        for the text and lighter hue for the background.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h4>Example 2</h4>
+                    <p id="colorblind2" class="colorblind-examples" title="Contrast Ratio = 3.24">This example is
+                        particularly bad for people with
+                        Deuteranomaly, deuteranopia, or
+                        protanopia. </p>
+                    <p id="colorblind2-fixed" class="colorblind-examples" title="Contrast Ratio = 7.34">To avoid the
+                        dreaded green/red contrast,
+                        changing
+                        red to magenta helps make it more accessible.</p>
+                </article>
+                <br>
+                <article>
+                    <h4>Example 3</h4>
+                    <p id="colorblind3" class="colorblind-examples" title="Contrast Ratio = 1.19">In this example, the
+                        blue text is too bright in
+                        contrast
+                        with the bright yellow. </p>
+                    <p id="colorblind3-fixed" class="colorblind-examples" title="Contrast Ratio = 8.99">The contrast can
+                        be fixed by darkening the
+                        text
+                        and brightening the yellow background.</p>
+                </article>
+            </article>
+        </section>
+
+
+
+
+
+
+
+        <a class="anchor" id="layout"></a>
+        <h2> Layout</h2>
+        <hr>
+        <hr>
+        <h3>Headings!</h3>
+        <section id="headings" class="subsection">
+            <p>Headings range from &lt;h1&gt;...&lt;h6&gt;</p>
+            <hr>
+            <article>
+                <h4>Accessibility rules for headings:</h4>
+                <p>There should be only <strong>one</strong> &lt;h1&gt; element on a page.</p>
+                <p>Headings can be used to organize information into hierarchies</p>
+                <p>For example a &lt;h4&gt; should be a detail of a &lt;h3&gt;</p>
+                <p>This is because most screen readers tab through information by heading type.</p>
+                <p>To quote FreeCodeCamp:</p>
+                <blockquote
+                    cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/use-headings-to-show-hierarchical-relationships-of-content">
+                    "Headings with equal (or higher) rank
+                    start new implied sections, headings with lower rank start subsections of the previous one."
+                </blockquote>
+                <hr>
+                <article>
+                    <header>
+                        <h5>Here's an example of hierarchical layout:</h5>
+                    </header>
+                    <ul class="bullets">
+                        <li>&lt;h1&gt; Cool Facts About Penguins</li>
+                        <ul>
+                            <li>&lt;h2&gt; Favorite food </li>
+                            <ul>
+                                <li>&lt;h3&gt; Fish</li>
+                                <ul>
+                                    <li>&lt;h4&gt; Albacore tuna</li>
+                                </ul>
+                                <li>&lt;h3&gt; Plants</li>
+                                <ul>
+                                    <li>&lt;h4&gt; Kelp</li>
+                                </ul>
+                            </ul>
+                            <li>&lt;h2&gt; - Favorite activities</li>
+                            <ul>
+                                <li>&lt;h3&gt; Swimming</li>
+                                <li>&lt;h3&gt; Sleeping</li>
+                                <li>&lt;h3&gt; Staring at the sky longingly</li>
+                                <li>&lt;h3&gt; Huddling</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </article>
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="nav">
+            <article>
+                <header>
+                    <h3>Nav</h3>
+                </header>
+                <p>Each page should have a nav element at the top to allow the reader to easily navigate between pages.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="header">
+            <article>
+                <header>
+                    <h3>Header</h3>
+                </header>
+                <p>The header element was derived from the &lt;head&gt; element, but now primarily surrounds heading
+                    elements to help organize content.</p>
+            </article>
+        </section>
+
+
     </main>
     <footer>
         <!-- Feedback implementation for later -->
@@ -307,10 +324,6 @@
 <!-- 
 
 * Organize content better
-
-* widen blockquote
-
-* Fix radio button on mobile        
 
 * 
 
