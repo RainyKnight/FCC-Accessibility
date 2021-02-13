@@ -46,6 +46,159 @@
                 blind people using screen readers to understand what the pictures represent.</p>
         </section>
         <hr>
+
+
+
+
+
+        <h1> Layout</h1>
+        <hr>
+        <hr>
+        <h2>Headings!</h2>
+        <section id="headings" class="subsection">
+            <p>Headings range from &lt;h1&gt;...&lt;h6&gt;</p>
+            <hr>
+            <article>
+                <h3>Accessibility rules for headings:</h3>
+                <div>
+                    <ul class="bullets">
+                        <li>There should be only <strong>one</strong> &lt;h1&gt; element on a page</li>
+                        <li>Headings can be used to organize information into hierarchies</li>
+                        <ul>
+                            <li>For example a &lt;h4&gt; should be a detail of a &lt;h3&gt;</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <p>This is because most screen readers tab through information by heading type.</p>
+                <p>To quote FreeCodeCamp:</p>
+                <blockquote
+                    cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/use-headings-to-show-hierarchical-relationships-of-content">
+                    "Headings with equal (or higher) rank
+                    start new implied sections, headings with lower rank start subsections of the previous one."
+                </blockquote>
+                <hr>
+                <article>
+                    <header>
+                        <h4>Here's an example of hierarchical layout:</h4>
+                    </header>
+                    <ul class="bullets">
+                        <li>&lt;h1&gt; Cool Facts About Penguins</li>
+                        <ul>
+                            <li>&lt;h2&gt; Favorite food </li>
+                            <ul>
+                                <li>&lt;h3&gt; Fish</li>
+                                <ul>
+                                    <li>&lt;h4&gt; Albacore tuna</li>
+                                </ul>
+                                <li>&lt;h3&gt; Plants</li>
+                                <ul>
+                                    <li>&lt;h4&gt; Kelp</li>
+                                </ul>
+                            </ul>
+                            <li>&lt;h2&gt; - Favorite activities</li>
+                            <ul>
+                                <li>&lt;h3&gt; Swimming</li>
+                                <li>&lt;h3&gt; Sleeping</li>
+                                <li>&lt;h3&gt; Staring at the sky longingly</li>
+                                <li>&lt;h3&gt; Huddling</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </article>
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="nav">
+            <article>
+                <header>
+                    <h2>Nav</h2>
+                </header>
+                <p>Each page should have a nav element at the top to allow the reader to easily navigate between pages.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="header">
+            <article>
+                <header>
+                    <h2>Header</h2>
+                </header>
+                <p>The header element was derived from the &lt;head&gt; element, but now primarily surrounds heading
+                    elements to help organize content.</p>
+            </article>
+        </section>
+
+
+
+
+
+
+        
+        <h1>Color</h1>
+        <hr>
+        <hr>
+        <section id="high contrast colors">
+            <h2>High Contrast Colors</h2>
+            <p>Colors are an important part of a web page. Colorblind users should be taken into account when deciding
+                on a color palette.</p>
+            <img src="https://miro.medium.com/max/2000/1*vEU5WV7Ho3FqQRcL2n5BEw.png" alt="Colorblind comparison chart">
+            <p>It's important to take the contrast ratio into consideration when deciding on a color.</p>
+            <p>Some designers even recommend building the website in grayscale first <strong>then</strong> adding color
+                throughout the site to accommodate folks with monochromacy. This ensures that the luminescence of each
+                element is sufficiently different enough.</p>
+            <img src="https://www.colour-blindness.com/wp-content/uploads/total.png" alt="Monochromacy comparison">
+            <p>According to FreeCodeCamp:</p>
+            <blockquote
+                cite="https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text">
+                "The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal
+                text. The ratio is calculated by comparing the relative luminance values of two colors. This ranges from
+                1:1 for the same color, or no contrast, to 21:1 for white against black, the strongest contrast. There
+                are many contrast checking tools available online that calculate this ratio for you."
+            </blockquote>
+            <p>Check out this <a href="https://webaim.org/resources/contrastchecker/">contrast ratio checker</a> to
+                determine if your website meets the 4.5:1 standard.</p>
+            <article class="subsection" id="colorblind-examples">
+                <hr>
+                <p>Below are some commonly inaccessible color combinations:</p>
+                <article>
+                    <h3>Example 1</h3>
+                    <p id="colorblind1" class="colorblind-examples">For example, blue text on a purple background may be
+                        completely invisible for people
+                        with color blindness.</p>
+                    <p id="colorblind1-fixed" class="colorblind-examples">Here's the same example except with a darker
+                        hue
+                        for the text and lighter hue for the background.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 2</h3>
+                    <p id="colorblind2" class="colorblind-examples">This example is particularly bad for people with
+                        Deuteranomaly, deuteranopia, or
+                        protanopia. </p>
+                    <p id="colorblind2-fixed" class="colorblind-examples">To avoid the dreaded green/red contrast,
+                        changing
+                        red to magenta helps make it more accessible.</p>
+                </article>
+                <br>
+                <article>
+                    <h3>Example 3</h3>
+                    <p id="colorblind3" class="colorblind-examples">In this example, the blue text is too bright in
+                        contrast
+                        with the bright yellow. </p>
+                    <p id="colorblind3-fixed" class="colorblind-examples">The contrast can be fixed by darkening the
+                        text
+                        and brightening the yellow background.</p>
+                </article>
+            </article>
+        </section>
+
+
+
+
+
         <section id="audio">
             <h2>Audio for screen readers</h2>
             <audio id="Screenreader example audio" controls>
